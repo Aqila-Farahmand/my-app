@@ -1,6 +1,6 @@
 # Hello World App with Docker
 
-This project contains a simple web application that displays "Hello World, {name}" fetched from a MongoDB database.
+This project contains a simple web application that displays "Hello World, {name}" fetched from the Redis database.
 
 ## Prerequisites
 
@@ -11,13 +11,13 @@ This project contains a simple web application that displays "Hello World, {name
 
 1. Clone this repository:
     ```sh
-    git clone <repository-url>
-    cd docker-app
+    git clone <https://github.com/Aqila-Farahmand/my-app.git>
+    cd my-app
     ```
 
 2. Build and run the containers using Docker Compose:
     ```sh
-    docker-compose up --build
+    docker compose up --build
     ```
 
 3. Open your web browser and visit `http://localhost:5001`. You should see "Hello World, YourName".
@@ -26,9 +26,9 @@ This project contains a simple web application that displays "Hello World, {name
 
 To stop and remove the containers, use:
 ```sh
-    docker-compose down
+    docker compose down
 ```
 
 ## References
-Some of the Dockerfiles and initial setups to pull docker images were inspired by official documentation and various publicly available tutorials. 
+Some of the Dockerfiles and initial setups to pull and build docker images were inspired by official documentation and various publicly available tutorials. 
 Refer to the [official Docker](https://docs.docker.com/) and [Docker Hub](https://hub.docker.com/) documentation for more details.
