@@ -5,7 +5,7 @@ services:
       context: ./database
       dockerfile: Dockerfile
     environment:
-      MONGO_INITDB_DATABASE: exampledb
+      MONGO_INITDB_DATABASE: users
     ports:
       - "27017:27017"
 
