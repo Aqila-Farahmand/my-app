@@ -38,7 +38,7 @@ This project is a simple containerized application that displays "hello world, {
 
 To stop and remove the containers, use:
 ```sh
-    docker compose down
+    docker-compose down
 ```
 
 ## References
