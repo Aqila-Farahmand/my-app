@@ -42,7 +42,7 @@ To stop and remove the containers, use:
 ```
 
 ## References
-Some of the Dockerfiles and initial setups were inspired by official documentation. 
+Some of the files and initial setups were inspired by official documentation. 
 For more detailed information, refer to the following resources:
 
 - [Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/)
