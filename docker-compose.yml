@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  db:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    environment:
+      MONGO_INITDB_DATABASE: exampledb
+    ports:
+      - "27017:27017"
+
+  web:
+    build:
+      context: ./webserver
+      dockerfile: Dockerfile
+    environment:
+      DB_HOST: db
+      DB_PORT: 27017
+      DB_NAME: users
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
